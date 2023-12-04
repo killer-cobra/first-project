@@ -228,9 +228,9 @@ git status
 
 ```mermaid
 graph LR;
-untracked -- git add --> staged -- git commit --> tracked;
-tracked -- изменения --> modified -- git add --> staged;
-staged -- изменения --> modified;
+  untracked -- git add --> staged -- git commit --> tracked;
+  tracked -- изменения --> modified -- git add --> staged;
+  staged -- изменения --> modified;
 && Секретный комментрий!;
 ```
 
