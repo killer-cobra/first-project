@@ -225,12 +225,13 @@ Staged состояние файлов проявляется в случае п
 git status  
 ```  
 Схема состояний файлов:  
+
 ```mermaid
-graph LR
-untracked -- git add --> staged -- git commit --> tracked
-tracked -- изменения --> modified -- git add --> staged
-staged -- изменения --> modified
-&& Секретный комментрий!
+graph LR;
+untracked -- git add --> staged -- git commit --> tracked;
+tracked -- изменения --> modified -- git add --> staged;
+staged -- изменения --> modified;
+&& Секретный комментрий!;
 ```
 
 
