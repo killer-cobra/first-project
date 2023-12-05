@@ -237,6 +237,17 @@ graph LR;
 && Секретный комментрий!;
 ```
 
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "git commit"     --> tracked
+
+  staged -- "changes"   --> modified;
+  tracked -- "changes"  --> modified;
+  modified -- "git add" --> staged;
+&& Секретный комментрий!;
+```
+
 Интересный факт, некоторые файлы могут отображаться в отчёте дважды, к примеру за счёт того, что файл был изменён несколько раз, или изменён при состоянии "подготовленный".
 
 ### Отслеживаем коммиты  
