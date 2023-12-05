@@ -228,25 +228,14 @@ git status
 
 ```mermaid
 graph LR;
-  untracked -- "git add" --> staged; 
-  staged -- "git commit" --> tracked;
+  untracked -- "git add" --> staged;
+  staged    -- "git commit"     --> tracked
 
-  staged -- "изменения" --> modified;
-  tracked -- "изменения" --> modified;
+  staged -- "changes"   --> modified;
+  tracked -- "changes"  --> modified;
   modified -- "git add" --> staged;
 && Секретный комментрий!;
 ```
-GGGGGGG
-
-```mermaid
-graph LR;
-  untracked -- "git add" --> staged;
-  staged    -- "???"     --> tracked/comitted -- "хз" --> crush;
-
-%% стрелка без текста для примера: 
-  A --> B;
-``` 
-
 
 Интересный факт, некоторые файлы могут отображаться в отчёте дважды, к примеру за счёт того, что файл был изменён несколько раз, или изменён при состоянии "подготовленный".
 
